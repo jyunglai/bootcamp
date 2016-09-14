@@ -12,9 +12,6 @@ bd_1975 = np.loadtxt('data/beak_depth_scandens_1975.csv')
 bd_2012 = np.loadtxt('data/beak_depth_scandens_2012.csv')
 
 #Generate ECDF values
-def generateECDFValues(data):
-    """
-    Generates x and y values for the ECDF of the data
-    """
+x_bd_1975_ecdf, y_bd_1975_ecdf = bootcamp_utils.ecdf(bd_1975)
 
-    
+#Plot
